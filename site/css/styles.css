@@ -72,8 +72,8 @@ nav > #logo {
     margin: auto;
 }
 
-.gallery-intro{
-    min-width: 1320px;
+.intro{
+    max-width: 1200px;
     width: 70%;
     height: 15rem;
     background-color: #747574;
@@ -99,4 +99,28 @@ nav > #logo {
     background-color: #747574;
     justify-self: center;
     align-self: center;
+}
+
+.photo:hover{
+    box-shadow: 0px 0px 5px #34af29;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.service{
+    width: 75%;
+    height: 5rem;
+    background-color: #747574;
+    margin: auto;
+    min-width: 1320px;
+}
+.service:hover{
+    box-shadow: 0px 0px 5px #34af29;
 }
