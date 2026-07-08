@@ -130,3 +130,19 @@ nav > #logo {
 .service:hover{
     box-shadow: 0px 0px 5px #34af29;
 }
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.contact-card{
+    width: 600px;
+    height: 600px;
+    background-color: #747574;
+    margin: 10px 25px 100px 25px;
+}
