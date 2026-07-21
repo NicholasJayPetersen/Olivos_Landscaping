@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     header.innerHTML = `
             <nav>
                 <div id="logo">
-                    <!--temporary placeholder for logo-->
-                    <img src="./images/logo-transparent.png" alt="Olivos Landscaping Logo" width="75" height="75">
+                    <a href="./index.html"><img src="./images/logo-transparent.png" alt="Olivos Landscaping Logo" width="75" height="75"></a>
                 </div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
