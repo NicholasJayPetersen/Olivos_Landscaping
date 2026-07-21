@@ -11,6 +11,17 @@ h1{
     color:#747574;
 }
 
+h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    color: #747574;
+}
+
+ul{
+    list-style-type: circle;
+}
+
 nav {
     background-color: #067706;
     position: fixed;
@@ -65,7 +76,7 @@ footer{
 .banner {
     width: 100%;
     height: 25rem;
-    background-color: #747574;
+    background-image: url("../images/banner.png")
 }
 
 .featured-items{
@@ -79,15 +90,25 @@ footer{
 .featured-items section{
     width: 400px;
     height: 20rem;
-    background-color: #747574;
     margin: 10px 25px 100px 25px;
+    padding-left: 10px;
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px -1px gray;
 }
 
 .about{
     width: 70%;
     height: 15rem;
-    background-color: #747574;
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px -1px gray;
     margin: auto;
+    padding: 1em;
+}
+
+.about h2{
+    text-align: center;
 }
 
 .intro{
