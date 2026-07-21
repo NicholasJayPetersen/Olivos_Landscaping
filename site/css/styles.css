@@ -1,6 +1,14 @@
 body{
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 4em;
+    font-weight: 400;
+    color:#747574;
 }
 
 nav {
@@ -83,10 +91,15 @@ footer{
 }
 
 .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     width: 70%;
     height: 15rem;
-    background-color: #747574;
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px -1px gray;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -97,24 +110,34 @@ footer{
     justify-content: space-around;
     gap: 20px;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 5%;
+    margin-top: 3%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.photo>img{
+    aspect-ratio: 1/1;
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
 }
 
 .photo{
     background-color: #747574;
     justify-self: center;
     align-self: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px -1px gray;
+    transition: scale 0.33s;
 }
 
 .photo:hover{
     box-shadow: 0px 0px 5px #34af29;
-    scale: 1.20;
+    scale: 1.25;
 }
 
 .photo:hover{
