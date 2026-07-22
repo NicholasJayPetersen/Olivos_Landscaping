@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="./css/styles.css">
         <title>Contact Us</title>
         <script src="js/nav.js"></script>
+        <script type="module" src="js/map.js"></script>
+        <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +19,22 @@
         <header><!--JS will populate this area with nav--></header>
         <main>
             <section>
-                <div class="intro"></div>
+                <div class="intro">
+                    <h1>Contact Us</h1>
+                </div>
             </section>
             <section class="contact">
-                <div class="contact-card" id="phone"></div>
-                <div class="contact-card" id="email"></div>
+                <a href="tel:+1-555-555-5555">
+                    <div class="contact-card" id="phone">
+                        <h2>Phone</h2>
+                        +1 (555) 555-5555
+                    </div>
+                </a>
+
+                <div class="contact-card">
+                    <h2>Service Area</h2>
+                    <div id="map"></div>
+                </div>
             </section>
         </main>
         <footer>
