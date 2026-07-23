@@ -182,7 +182,7 @@ footer{
 
 .about{
     width: 70%;
-    height: 15rem;
+    height: fit-content;
     background-color: rgba(169, 169, 169, 0.1);
     border-radius: 6px;
     box-shadow: 0px 4px 6px -1px gray;
@@ -268,7 +268,7 @@ footer{
 }
 
 .service{
-    width: 75%;
+   max-width: 75%;
     min-height: 5rem;
     background-color: rgba(169, 169, 169, 0.1);
     border-radius: 6px;
@@ -285,9 +285,10 @@ footer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 50px;
     margin: auto;
     margin-top: 5%;
+    max-width: 90%;
 }
 
 .contact-card{
@@ -295,8 +296,8 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 600px;
-    min-height: 600px;
+    min-width: 700px;
+    min-height: 700px;
     background-color: rgba(169, 169, 169, 0.1);
     border-radius: 6px;
     box-shadow: 0px 4px 6px -1px gray;
@@ -329,28 +330,95 @@ footer{
     }
 }
 
-@media(max-width: 500px){
-    h1{font-size: 3rem;}
+@media(max-width: 1055px) {
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .photo{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .photo>img {
+        max-width: 100%;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
 
-    nav{height: 9rem;}
+    .service {
+        min-height: 4rem;
+        min-width: 90%;
+    }
+    nav>a {
+        white-space: nowrap;
+        position: relative;
+        left: 75px;
+    }
+    nav ul{
+        gap: 40px;
+    }
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    nav{height: 8rem;}
+
     nav ul{
         position:absolute;
-        top: 100px;
-        left: -5px;
+        top: 80px;
+        left: -10px;
         font-size: small;
         scale: 0.9;
+        gap: 30px;
     }
+
+    nav ul li a{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 1px;
+        box-shadow: 2px 2px white;
+        padding: 5px;
+    }
+
+    nav ul li a:active {
+        background-color: white;
+    }
+
     nav > a{
         position: absolute;
         top: 10px;
         left: -30px;
         scale: 0.8;
         white-space: nowrap;
+    }
+
+    .photos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact a {
+        min-width: 100%;
 
     }
-    .photos{grid-template-columns: repeat(1, 1fr);}
+
+    .contact-card {
+        min-width: 100%;
+        min-height: 20rem;
+        border: 0;
+        margin: 0;
+    }
+
+    .service {
+        text-align: center;
+    }
 }
 
-@media screen (max-width: 1055px){
-        .photos {grid-template-columns: repeat(5, 1fr);}
-}
