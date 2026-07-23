@@ -1,4 +1,4 @@
-# Small Website
+# Olivo's Landscaping
 
 A simple, lightweight website built with HTML, CSS, and JavaScript.
 
