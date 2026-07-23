@@ -4,7 +4,7 @@ A simple, lightweight website built with HTML, CSS, and JavaScript.
 
 ## Overview
 
-This project is a small static website that can be used as a starting point for a personal site, portfolio, landing page, or school project.
+This project is a small, mostly static website that was built for a local landscaping company.
 
 ## Features
 
@@ -32,7 +32,7 @@ git clone https://github.com/your-username/your-project-name.git
 To open the project in the editor
 
 ```bash
-cd Olivo's_Landscaping
+cd Olivos_Landscaping
 code .
 ```
 
@@ -85,13 +85,6 @@ site
             modal.js
             nav.js
 ```
-
-## Customization
-
-- Update the page content in `index.html`.
-- Change colors, fonts, and spacing in `css/styles.css`.
-- Add interactive behavior in `js/your_script.js`.
-- Store website images in the `images` folder.
 
 ## Deployment
 
