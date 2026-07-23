@@ -182,7 +182,7 @@ footer{
 
 .about{
     width: 70%;
-    height: 15rem;
+    height: fit-content;
     background-color: rgba(169, 169, 169, 0.1);
     border-radius: 6px;
     box-shadow: 0px 4px 6px -1px gray;
@@ -268,7 +268,7 @@ footer{
 }
 
 .service{
-    width: 75%;
+   max-width: 75%;
     min-height: 5rem;
     background-color: rgba(169, 169, 169, 0.1);
     border-radius: 6px;
@@ -288,6 +288,7 @@ footer{
     gap: 100px;
     margin: auto;
     margin-top: 5%;
+    max-width: 90%;
 }
 
 .contact-card{
@@ -329,6 +330,12 @@ footer{
     }
 }
 
+@media(max-width: 1055px) {
+    .photos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 @media(max-width: 500px){
     h1{
         font-size: 3rem;
@@ -360,11 +367,35 @@ footer{
         left: -30px;
         scale: 0.8;
         white-space: nowrap;
+    }
+    .photos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    .service {
+        min-height: 4rem;
+        min-width: 90%;
+        text-align: center;
+    }
+
+    .contact a {
+        min-width: 100%;
 
     }
-    .photos{grid-template-columns: repeat(1, 1fr);}
+
+    .contact-card {
+        min-width: 100%;
+        min-height: 20rem;
+        border: 0;
+        margin: 0;
+    }
 }
 
-@media(max-width: 1055px){
-        .photos {grid-template-columns: repeat(5, 1fr);}
-}
