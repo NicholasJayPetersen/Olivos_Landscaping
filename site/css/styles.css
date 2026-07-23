@@ -1,3 +1,7 @@
+*{
+    box-sizing:content-box;
+}
+
 body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -104,10 +108,11 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: left;
+    margin-top: 1.5em;
 }
 
 for{
-    color:white;
+    color: #747574;
 }
 
 input{
@@ -118,12 +123,11 @@ input{
     border-bottom: 1px solid;
     outline: none;
     margin-bottom: 1em;
-    text-align: center;
     background-color: transparent;
-    color:white
+    color: #747574;
 }
 input:focus{
-    box-shadow: 0 2px white;
+    box-shadow: 0 1px #747574;
 }
 
 textarea{
@@ -131,14 +135,15 @@ textarea{
     width: 90%;
     height: 5em;
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: #747574;
+    border: 1px solid #747574;
     border-radius: 5px;
     outline: none;
+    height: 15em;
 }
 
 textarea::placeholder{
-    color: rgba(255, 255, 255, 0.809);
+    color: #747574d3;
 }
 
 footer{
@@ -206,12 +211,12 @@ footer{
 }
 
 .modal-content{
-        border: solid rgba(169, 169, 169, 0.4) 2px;
-        box-shadow: 0px 0px 5px 2px rgba(52, 175, 41, 0.9);
-        background-color: rgb(140, 140, 140);
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 6px;
+    background-color: rgb(231, 231, 231)
 }
 .modal-title{
-    color:white;
+    color:#747574;
 }
 
 .photos{

@@ -23,24 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Request a Quote</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
                 <div class="modal-body">
-                    <form action="" method="post">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Request a Quote</h1>
+                    <form action="#">
                         <for id="name">Name:</for>
                         <input type="text" id="name" name="name" required>
                         <for id="email">email:</for>
                         <input type="email" id="email" name="email" required>
                         <for id="phone">Phone:</for>
                         <input type="tel" id="phone" name="phone" required>
-                        <textarea id="message" name="message" placeholder="How can we help?" width="200px" height="100px" required></textarea>
-                        <button type="button" class="btn btn-primary">Send</button>
+                        <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+                        <div>
+                            <button type="button submit" class="btn btn-primary">Send</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 </div>
                 </div>
             </div>
