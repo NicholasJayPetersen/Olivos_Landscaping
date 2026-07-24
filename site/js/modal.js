@@ -1,3 +1,5 @@
+import {validate} from "./regex.js";
+
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById("modal");
     modal.innerHTML = `
@@ -7,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="modal-body">
                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Request a Quote</h1>
                     <form action="#">
-                        <for id="name">Name:</for>
+                        <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
-                        <for id="email">email:</for>
+                        <label for="email">email:</label>
                         <input type="email" id="email" name="email" required>
-                        <for id="phone">Phone:</for>
+                        <label for="phone">Phone:</label>
                         <input type="tel" id="phone" name="phone" required>
                         <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
                         <div>
@@ -24,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         </div>
     `;
+
+    const quoteForm = modal.querySelector("form");
+    validate(quoteForm);
 
     if(localStorage.getItem("submitted") === "1")
     {
