@@ -14,7 +14,9 @@ export function validate(form){
         console.log(checkName.test(nameInput.value))
         if (checkName.test(nameInput.value))
         {
-            nameInput.style.borderBottomColor = "lightgreen";
+            nameInput.style.borderBottom = "2px solid green";
+            nameInput.style.boxShadow = "none";
+
         }
         else
         {
@@ -25,29 +27,35 @@ export function validate(form){
 
     phoneInput.addEventListener("keyup", function () {
         console.log(checkPhone.test(phoneInput.value))
-        if (checkPhone.test(phoneInput.value)) {
-            phoneInput.style.borderBottomColor = "lightgreen";
+        if (checkPhone.test(phoneInput.value))
+        {
+            phoneInput.style.borderBottom = "2px solid green";
         }
-        else {
+        else
+        {
             phoneInput.style.borderBottomColor = "yellow";
         }
     });
 
     emailInput.addEventListener("keyup", function () {
         console.log(checkEmail.test(emailInput.value))
-        if (checkEmail.test(emailInput.value)) {
-            emailInput.style.borderBottomColor = "lightgreen";
+        if (checkEmail.test(emailInput.value))
+        {
+            emailInput.style.borderBottom = "2px solid green";
         }
-        else {
+        else
+        {
             emailInput.style.borderBottomColor = "yellow";
         }
     });
 
     messageInput.addEventListener("keyup", function () {
-        if (checkMessage.test(messageInput.value)) {
-            messageInput.style.borderColor = "lightgreen";
+        if (checkMessage.test(messageInput.value))
+        {
+            messageInput.style.borderBottom = "2px solid green";
         }
-        else {
+        else
+        {
             messageInput.style.borderColor = "yellow";
         }
     });
