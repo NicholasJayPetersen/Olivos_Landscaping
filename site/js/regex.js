@@ -20,7 +20,8 @@ export function validate(form){
         }
         else
         {
-            nameInput.style.borderBottomColor = "yellow";
+            nameInput.style.borderBottom = "2px solid yellow";
+            nameInput.style.boxShadow = "none";
         }
 
     });
@@ -30,10 +31,12 @@ export function validate(form){
         if (checkPhone.test(phoneInput.value))
         {
             phoneInput.style.borderBottom = "2px solid green";
+            phoneInput.style.boxShadow = "none";
         }
         else
         {
-            phoneInput.style.borderBottomColor = "yellow";
+            phoneInput.style.borderBottom = "2px solid yellow";
+            phoneInput.style.boxShadow = "none";
         }
     });
 
@@ -42,21 +45,25 @@ export function validate(form){
         if (checkEmail.test(emailInput.value))
         {
             emailInput.style.borderBottom = "2px solid green";
+            emailInput.style.boxShadow = "none";
         }
         else
         {
-            emailInput.style.borderBottomColor = "yellow";
+            emailInput.style.borderBottom = "2px solid yellow";
+            emailInput.style.boxShadow = "none";
         }
     });
 
     messageInput.addEventListener("keyup", function () {
         if (checkMessage.test(messageInput.value))
         {
-            messageInput.style.borderBottom = "2px solid green";
+            messageInput.style.border = "2px solid green";
+            messageInput.style.boxShadow = "none";
         }
         else
         {
-            messageInput.style.borderColor = "yellow";
+            messageInput.style.border = "2px solid yellow";
+            messageInput.style.boxShadow = "none";
         }
     });
 }
