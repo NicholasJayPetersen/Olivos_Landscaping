@@ -330,6 +330,13 @@ footer{
     }
 }
 
+@media(max-width: 1600px){
+    .contact-card {
+        min-width: 500px;
+        min-height: 500px;
+    }
+}
+
 @media(max-width: 1055px) {
     .photos {
         grid-template-columns: repeat(3, 1fr);

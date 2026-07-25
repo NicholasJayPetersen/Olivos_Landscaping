@@ -1,6 +1,6 @@
 const checkName = /^[a-zA-Z]+\s?[a-zA-Z]*\s?[a-zA-Z]*$/ //requires at least one non-digit char
 const checkPhone = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/ //US phone numbers only
-const checkEmail = /^[\d\w\.]+@[a-z]+.[a-z]+.?[a-z]+?$/
+const checkEmail = /^[\d\w\._]+@[a-z]+\.[a-z]+\.?[a-z]*$/
 const checkMessage = /.+/ //Anything as long as it's not empty
 
 export function validate(form){
